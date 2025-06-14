@@ -12,34 +12,36 @@ import BrushIcon from '@mui/icons-material/Brush'; // For Artist & Animator
 import AutoStoriesIcon from '@mui/icons-material/AutoStories'; // For Writer
 import MusicNoteIcon from '@mui/icons-material/MusicNote'; // For Sound Designer
 
+const basePath = import.meta.env.BASE_URL || '/silent-studio';
+
 const items = [
   {
     icon: <EmojiObjectsIcon />,
     title: 'Team Leader & Game Designer',
     description: 'Mirado',
-    imageLight: `url("${window.location.origin}/mirado.png")`,
-    imageDark: `url("${window.location.origin}/mirado.png")`,
+    imageLight: `url("${window.location.origin}${basePath}/mirado.png")`,
+    imageDark: `url("${window.location.origin}${basePath}/mirado.png")`,
   },
   {
     icon: <BrushIcon />,
     title: 'Artist & Animator',
     description: 'Chad',
-    imageLight: `url("${window.location.origin}/chad.png")`,
-    imageDark: `url("${window.location.origin}/chad.png")`,
+    imageLight: `url("${window.location.origin}${basePath}/chad.png")`,
+    imageDark: `url("${window.location.origin}${basePath}/chad.png")`,
   },
   {
     icon: <AutoStoriesIcon />,
     title: 'Writer & Level Designer',
     description: 'Mahery',
-    imageLight: `url("${window.location.origin}/mahery.png")`,
-    imageDark: `url("${window.location.origin}/mahery.png")`,
+    imageLight: `url("${window.location.origin}${basePath}/mahery.png")`,
+    imageDark: `url("${window.location.origin}${basePath}/mahery.png")`,
   },
   {
     icon: <MusicNoteIcon />,
     title: 'Sound Designer & Composer',
     description: 'Anah',
-    imageLight: `url("${window.location.origin}/anah.png")`,
-    imageDark: `url("${window.location.origin}/anah.png")`,
+    imageLight: `url("${window.location.origin}${basePath}/anah.png")`,
+    imageDark: `url("${window.location.origin}${basePath}/anah.png")`,
   },
 ];
 
