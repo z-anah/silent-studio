@@ -7,34 +7,39 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 
-import DevicesRoundedIcon from '@mui/icons-material/DevicesRounded';
-import EdgesensorHighRoundedIcon from '@mui/icons-material/EdgesensorHighRounded';
-import ViewQuiltRoundedIcon from '@mui/icons-material/ViewQuiltRounded';
+import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects'; // For Game Designer
+import BrushIcon from '@mui/icons-material/Brush'; // For Artist & Animator
+import AutoStoriesIcon from '@mui/icons-material/AutoStories'; // For Writer
+import MusicNoteIcon from '@mui/icons-material/MusicNote'; // For Sound Designer
 
 const items = [
   {
-    icon: <ViewQuiltRoundedIcon />,
-    title: 'Dashboard',
-    description:
-      'This item could provide a snapshot of the most important metrics or data points related to the product.',
-    imageLight: `url("${import.meta.env.VITE_TEMPLATE_IMAGE_URL || 'https://mui.com'}/static/images/templates/templates-images/dash-light.png")`,
-    imageDark: `url("${import.meta.env.VITE_TEMPLATE_IMAGE_URL || 'https://mui.com'}/static/images/templates/templates-images/dash-dark.png")`,
+    icon: <EmojiObjectsIcon />,
+    title: 'Team Leader & Game Designer',
+    description: 'Mirado',
+    imageLight: `url("${window.location.origin}/mirado.png")`,
+    imageDark: `url("${window.location.origin}/mirado.png")`,
   },
   {
-    icon: <EdgesensorHighRoundedIcon />,
-    title: 'Mobile integration',
-    description:
-      'This item could provide information about the mobile app version of the product.',
-    imageLight: `url("${import.meta.env.VITE_TEMPLATE_IMAGE_URL || 'https://mui.com'}/static/images/templates/templates-images/mobile-light.png")`,
-    imageDark: `url("${import.meta.env.VITE_TEMPLATE_IMAGE_URL || 'https://mui.com'}/static/images/templates/templates-images/mobile-dark.png")`,
+    icon: <BrushIcon />,
+    title: 'Artist & Animator',
+    description: 'Chad',
+    imageLight: `url("${window.location.origin}/chad.png")`,
+    imageDark: `url("${window.location.origin}/chad.png")`,
   },
   {
-    icon: <DevicesRoundedIcon />,
-    title: 'Available on all platforms',
-    description:
-      'This item could let users know the product is available on all platforms, such as web, mobile, and desktop.',
-    imageLight: `url("${import.meta.env.VITE_TEMPLATE_IMAGE_URL || 'https://mui.com'}/static/images/templates/templates-images/devices-light.png")`,
-    imageDark: `url("${import.meta.env.VITE_TEMPLATE_IMAGE_URL || 'https://mui.com'}/static/images/templates/templates-images/devices-dark.png")`,
+    icon: <AutoStoriesIcon />,
+    title: 'Writer & Level Designer',
+    description: 'Mahery',
+    imageLight: `url("${window.location.origin}/mahery.png")`,
+    imageDark: `url("${window.location.origin}/mahery.png")`,
+  },
+  {
+    icon: <MusicNoteIcon />,
+    title: 'Sound Designer & Composer',
+    description: 'Anah',
+    imageLight: `url("${window.location.origin}/anah.png")`,
+    imageDark: `url("${window.location.origin}/anah.png")`,
   },
 ];
 
@@ -151,15 +156,15 @@ export default function Features() {
           gutterBottom
           sx={{ color: 'text.primary' }}
         >
-          Product features
+          Meet the Team
         </Typography>
         <Typography
           variant="body1"
           sx={{ color: 'text.secondary', mb: { xs: 2, sm: 4 } }}
         >
-          Provide a brief overview of the key features of the product. For example,
-          you could list the number of features, their types or benefits, and
-          add-ons.
+          With complementary skills and a collaborative spirit, 
+          we're dedicated to transforming our unique ideas into 
+          impactful gaming experiences
         </Typography>
       </Box>
       <Box
@@ -254,6 +259,8 @@ export default function Features() {
                 ...theme.applyStyles('dark', {
                   backgroundImage: 'var(--items-imageDark)',
                 }),
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
               })}
               style={
                 items[selectedItemIndex]
