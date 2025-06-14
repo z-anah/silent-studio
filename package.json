@@ -3,6 +3,7 @@
   "private": true,
   "version": "7.0.0",
   "type": "module",
+  "homepage": "https://z-anah.github.io/silent-studio",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -16,6 +17,7 @@
     "@mui/material": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-router-dom": "^7.6.2",
     "tailwindcss": "latest",
     "visuallyHidden": "link:@mui/utils/visuallyHidden"
   },
@@ -23,6 +25,7 @@
     "@tailwindcss/vite": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react": "latest",
     "typescript": "latest",
     "vite": "latest"
