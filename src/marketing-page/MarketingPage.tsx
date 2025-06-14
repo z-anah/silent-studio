@@ -10,11 +10,25 @@ import Features from './components/Features';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import { useEffect } from 'react';
+import { useColorScheme } from '@mui/material/styles';
+
+// Function to force dark mode
+function ForceDarkMode() {
+  const { setMode } = useColorScheme();
+  
+  useEffect(() => {
+    setMode('dark');
+  }, [setMode]);
+  
+  return null;
+}
 
 export default function MarketingPage(props: { disableCustomTheme?: boolean }) {
   return (
-    <AppTheme {...props}>
+    <AppTheme {...props} defaultMode="dark">
       <CssBaseline enableColorScheme />
+      <ForceDarkMode />
 
       <AppAppBar />
       <Hero />
