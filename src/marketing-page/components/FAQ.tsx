@@ -18,6 +18,8 @@ export default function FAQ() {
           ? [...expanded, panel]
           : expanded.filter((item) => item !== panel),
       );
+      console.log(event, isExpanded, panel);
+      
     };
 
   return (
