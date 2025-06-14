@@ -6,7 +6,7 @@
   "homepage": "https://z-anah.github.io/silent-studio",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build --base=/silent-studio/ && rm -rf docs && mv dist docs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -27,6 +27,7 @@
     "@types/react-dom": "latest",
     "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react": "latest",
+    "gh-pages": "^6.3.0",
     "typescript": "latest",
     "vite": "latest"
   }
